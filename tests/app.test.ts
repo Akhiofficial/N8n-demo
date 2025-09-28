@@ -11,6 +11,6 @@ describe('App routes', () => {
   it('GET /greet/:name returns greeting', async () => {
     const res = await request(app).get('/greet/Ada');
     expect(res.status).toBe(200);
-    expect(res.body).toEqual({ message: 'Hello, Ada!' });
+    expect(res.body).toEqual({ message: 'Hello, Ada!'});
   });
 });
